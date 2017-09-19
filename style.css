@@ -117,12 +117,156 @@ body{
 	display: flex;
     justify-content: space-between;
 	flex-wrap: wrap;
+	
 
 }
+	.card {
+		display: flex;
+		flex: 0 1 calc(50% - .5em);
+		margin-bottom: 1.5em;
+	}
+}
+
+@media screen and (min-width:60em){
 	.card {
 		flex: 0 1 calc(33% - 1em);
 	}
 }
+
+
+
+
+
+
+
+
+.site-title{
+	margin-bottom:1em;
+	
+	text-align: center;
+}
+
+.main-menu{
+	padding: .4em 1em;
+	color: white;
+	background: hsl(0, 0%, 20%);
+}
+.post-content{
+	padding: 0 1.4em 1.4em;
+}
+
+.sidebar{
+	padding: .5em 1.4em 1em;
+	background: hsl(0, 0%, 90%);
+}
+
+.example-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ 
+.example-menu a {
+display: block;
+	padding: .4em 0;
+	color:inherit;
+	text-decoration:none;
+	transition: all 0.5s ease;
+}
+.example-menu a:hover,
+.example-menu a:focus{
+	
+}
+
+.footer-area {
+	text-align: center;
+	padding: .4em 1em;
+	background: hsl(0, 0%, 75%);
+}
+
+@media screen and (min-width:40em){
+	.outer-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
+		display: flex;
+	}
+	
+	/*main content 40 and in a center,but it will add unwanted space on the right of the sidebar,fixed in .main-area*/
+	.post-content {
+		max-width: 40em;
+		margin:0 auto;
+	}
+	
+	/* sidebar always 12em*/
+	.sidebar {
+		flex:0 0 12em;
+		order: 0;
+	}
+	
+	/*to remove the space on the right of the sidebar*/
+	.main-area{
+		flex: 1 1 auto;
+		order: ;
+	}
+	.sidebar-left {
+	order: 0;
+    }
+	
+}
+
+
+.masthead {
+	padding-top:5em;
+}
+
+
+
+
+/* sidebar switcher buttons */
+
+
+
+.sidebar-switcher{
+text-align: right;
+		padding-right:7em;
+
+}
+
+@media screen and (max-width:40em){
+	/*hide switcher on small screen*/
+	.sidebar-switcher{
+		display: none;
+	}
+}
+@media screen and (min-width:40em){
+	.sidebar-switcher a {
+		padding-left: .4em;
+		
+	}
+}
+
+
+.sidebar-switcher a:hover,
+.sidebar-switcher a:focus {
+	color:lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
